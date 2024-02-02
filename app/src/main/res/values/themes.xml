@@ -1,9 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Nail_it" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorOnPrimaryFixed"> @color/gray700</item>
+        <item name="colorOnSecondaryFixed"> @color/gray500</item>
+        <item name="colorOnTertiaryFixed"> @color/gray300</item>
     </style>
 
-    <style name="Theme.Nail_it" parent="Base.Theme.Nail_it" />
+    <style name="Theme.Nail_it" parent="Base.Theme.Nail_it" >
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorOnPrimaryFixed"> @color/gray700</item>
+        <item name="colorOnSecondaryFixed"> @color/gray500</item>
+        <item name="colorOnTertiaryFixed"> @color/gray300</item>
+    </style>
 </resources>
