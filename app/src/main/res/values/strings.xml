@@ -20,4 +20,19 @@
     <string name="masuk_dengan_google">Masuk dengan Google</string>
     <string name="masuk_dengan_apple_id">Masuk dengan Apple ID</string>
     <string name="belum_punya_akun_daftar">Belum punya akun? Daftar</string>
+    <string name="title_register">Buat Akun nail.it!</string>
+    <string name="reg_desk">Masukan data diri dan daftarkan akunmu untuk menikmati fitur lengkap dari nail.it!</string>
+    <string name="konfirmasi_kata_sandi">Konfirmasi Kata Sandi</string>
+    <string name="btn_selanjutnya_reg">Selanjutnya</string>
+    <string name="text_di_tengah_reg">atau</string>
+    <string name="lengkapi_data_diri">Lengkapi Data Diri</string>
+    <string name="pastikan_data_diri_yang_kamu_tuliskan_sudah_benar">Pastikan data diri yang kamu tuliskan sudah benar.</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nama_hint">Kahfi Smith</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="provinsi_hint">Jawa Timur</string>
+    <string name="nomor_telp">Nomor Telp.</string>
+    <string name="notelp_hint">8000000000000</string>
+    <string name="daftar">Daftar</string>
+    <string name="kebijakan_lengkapidata">Dengan mengklik Daftar, kamu telah membaca dan menyetujui Kebijakan Penggunaan dan Kebijakan Privasi</string>
 </resources>
