@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".KategoriActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/svgImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/interbold"
+            android:text="@string/titlekategori"
+            android:textColor="@color/gray700"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtdeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/satoshimedium"
+        android:text="@string/deskripsikategori"
+        android:textColor="@color/gray500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ll_title_kategori"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txtdeskripsi"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/search_background"
+                android:drawableStart="@drawable/search_24"
+                android:drawablePadding="10dp"
+                android:hint="Cari pekerjaan"
+                android:fontFamily="@font/satoshimedium"
+                android:textColorHint="@color/gray500"
+                android:imeOptions="actionSearch"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textSize="18dp">
+
+            </EditText>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtdeskripsi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/satoshimedium"
+        android:text="@string/deskripsikategori2"
+        android:textColor="@color/gray500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ll_search"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtdeskripsi2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
