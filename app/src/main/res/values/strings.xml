@@ -35,4 +35,17 @@
     <string name="notelp_hint">8000000000000</string>
     <string name="daftar">Daftar</string>
     <string name="kebijakan_lengkapidata">Dengan mengklik Daftar, kamu telah membaca dan menyetujui Kebijakan Penggunaan dan Kebijakan Privasi</string>
+    <string name="pilih_preferensi">Pilih Preferensi</string>
+    <string name="pilih_pref_desk">Kami akan merekomendasikan lowongan berdasarkan preferensi yang kamu pilih.</string>
+    <string name="search_hint_pilihPref">Cari Pekerjaan</string>
+    <string name="cari_berdasarkan_kategori">Cari berdasarkan kategori</string>
+    <string name="cat1_pilihPref">Programming</string>
+    <string name="tv_cat2">Business</string>
+    <string name="digital_marketing">Digital Marketing</string>
+    <string name="programming">Programming</string>
+    <string name="business">Business</string>
+    <string name="product_design"><![CDATA[Product & Design]]></string>
+    <string name="data_analyst"><![CDATA[Data & Analyst]]></string>
+    <string name="human_resource">Human Resource</string>
+    <string name="security">Security</string>
 </resources>
