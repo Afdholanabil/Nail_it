@@ -48,4 +48,10 @@
     <string name="data_analyst"><![CDATA[Data & Analyst]]></string>
     <string name="human_resource">Human Resource</string>
     <string name="security">Security</string>
+
+    <string name="titlekategori">Kategori Programming</string>
+    <string name="deskripsikategori">Kami akan merekomendasikan lowongan berdasarkan prefensi yang kamu pilih</string>
+    <string name="deskripsikategori2">Kamu bisa menambahkan hingga 8 pekerjaan</string>
+
+
 </resources>
