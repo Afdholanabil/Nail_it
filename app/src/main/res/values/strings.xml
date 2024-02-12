@@ -52,6 +52,8 @@
     <string name="titlekategori">Kategori Programming</string>
     <string name="deskripsikategori">Kami akan merekomendasikan lowongan berdasarkan prefensi yang kamu pilih</string>
     <string name="deskripsikategori2">Kamu bisa menambahkan hingga 8 pekerjaan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
