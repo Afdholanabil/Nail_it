@@ -38,5 +38,7 @@
     <string name="titlekategori">Kategori Programming</string>
     <string name="deskripsikategori">Kami akan merekomendasikan lowongan berdasarkan prefensi yang kamu pilih</string>
     <string name="deskripsikategori2">Kamu bisa menambahkan hingga 8 pekerjaan</string>
+    <string name="rekomendasipekerjaan">Pekerjaan Cocok Denganmu</string>
+    <string name="todo">TODO</string>
 
 </resources>

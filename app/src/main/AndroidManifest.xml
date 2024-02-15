@@ -13,10 +13,7 @@
         android:theme="@style/Theme.Nail_it"
         tools:targetApi="31">
         <activity
-            android:name=".KategoriActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LengkapiDataDiriActivity"
+            android:name=".RecomendationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,14 +22,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".KategoriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LengkapiDataDiriActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
