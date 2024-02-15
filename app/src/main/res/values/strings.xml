@@ -57,7 +57,8 @@
 =======
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pekerjaan_cocok_denganmu">Pekerjaan Cocok Denganmu</string>
 
->>>>>>> f4bb0bf5a9a63b1a30fe2b32c395ea480c4709a9
+    >>>>>>> f4bb0bf5a9a63b1a30fe2b32c395ea480c4709a9
 
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,17 +14,33 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager_slider"
             android:layout_width="0dp"
-            android:layout_height="350dp"
-            android:paddingStart="80dp"
-            android:paddingEnd="80dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
 
         </androidx.viewpager2.widget.ViewPager2>
+
+        <TextView
+            android:id="@+id/title_home1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pekerjaan_cocok_denganmu"
+            android:textSize="22sp"
+            android:textColor="@color/gray700"
+            android:fontFamily="@font/satoshibold"
+            app:layout_constraintTop_toBottomOf="@id/viewpager_slider"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRecomendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/title_home1">
+        </androidx.recyclerview.widget.RecyclerView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
