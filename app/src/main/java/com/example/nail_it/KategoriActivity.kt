@@ -16,8 +16,7 @@ class KategoriActivity : AppCompatActivity() {
         setContentView(R.layout.activity_kategori)
 
         val dataList2 = listOf(
-            ListTextAdapter.ItemListAdapter.ItemText("AI Engineer")
-
+            ListTextAdapter.ItemListAdapter.ItemText("AI Engineer", true)
         )
 
         recyclerView = findViewById(R.id.recyclerView)
