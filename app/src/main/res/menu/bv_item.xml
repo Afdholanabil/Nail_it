@@ -3,22 +3,32 @@
 
     <item android:title="Home"
         android:id="@+id/item_home"
-        android:icon="@drawable/home_3_outline"></item>
+        android:icon="@drawable/home_3_outline">
+
+    </item>
 
     <item android:title="Challange"
         android:id="@+id/item_challange"
-        android:icon="@drawable/award_4_outline"></item>
+        android:icon="@drawable/award_4_outline">
+
+    </item>
 
     <item android:title="Interview"
         android:id="@+id/item_interview"
-        android:icon="@drawable/voice_square_outline"></item>
+        android:icon="@drawable/voice_square_outline">
+
+    </item>
 
     <item android:title="Jobs"
         android:id="@+id/item_work"
-        android:icon="@drawable/work_outline"></item>
+        android:icon="@drawable/work_outline">
+
+    </item>
 
     <item android:title="Profiles"
         android:id="@+id/item_profiles"
-        android:icon="@drawable/profile_1_outline"></item>
+        android:icon="@drawable/profile_1_outline">
+
+    </item>
 
 </menu>
