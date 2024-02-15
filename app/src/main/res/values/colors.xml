@@ -8,4 +8,6 @@
     <color name="gray400">#9CA3AF</color>
     <color name="blue_primary">#595CFF</color>
     <color name="grayborder">#D1D5DB</color>
+    <color name="background">#f3f4f6</color>
+
 </resources>

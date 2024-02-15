@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+    
+    <ImageView
+        android:id="@+id/imgList"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/defaultimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/txtRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/satoshiblack"
+        app:layout_constraintStart_toEndOf="@id/imgList"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company"
+        android:textSize="15sp"
+        android:fontFamily="@font/satoshibold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/imgList"
+        app:layout_constraintTop_toBottomOf="@id/txtRole"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTyf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/satoshimedium"
+        app:layout_constraintStart_toEndOf="@id/imgList"
+        app:layout_constraintTop_toBottomOf="@id/txtCom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bookmark_24"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,19 +1,29 @@
 package com.example.nail_it
 
 import android.os.Bundle
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.nail_it.adapter.ListTextAdapter
 
 class KategoriActivity : AppCompatActivity() {
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: ListTextAdapter.ItemListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        var recyclerView: RecyclerView
-        val data = arrayOf("Text 1", "Text 2", "Text 3", "Text 4", "Text 5")
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kategori)
-    }
 
+        val dataList2 = listOf(
+            ListTextAdapter.ItemListAdapter.ItemText("AI Engineer", true)
+        )
+
+        recyclerView = findViewById(R.id.recyclerView)
+//        recyclerView.addItemDecoration()
+
+        adapter = ListTextAdapter.ItemListAdapter(this, dataList2)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = adapter
+    }
 }
