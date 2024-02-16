@@ -1,5 +1,6 @@
 package com.example.nail_it
 
+import android.graphics.Rect
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -7,11 +8,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.nail_it.adapter.ImageAdapter
+import com.example.nail_it.adapter.ListDataAdapter
 import kotlin.math.abs
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,6 +37,10 @@ class HomeFragment : Fragment() {
 
     private lateinit var imageadapter: ImageAdapter
 
+    //RecomendationAdapter
+    private lateinit var recomAdapter : ListDataAdapter.ItemListAdapter
+    private lateinit var recomRecycler : RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,13 +61,43 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+
         viewPager2 = view.findViewById(R.id.viewpager_slider)
 
-        imageadapter = ImageAdapter(requireContext())
+        imageadapter = ImageAdapter(requireContext(), viewPager2)
         viewPager2.adapter = imageadapter
+
+        imageadapter.startAutoScroll()
+
+
+        //RecomendationList
+        val dataList = listOf(
+            ListDataAdapter.ItemListAdapter.ItemData(R.drawable.defaultimage, "UI/UX Designer", "INDICO", "Fulltime", true),
+            ListDataAdapter.ItemListAdapter.ItemData(R.drawable.defaultimage1, "Game UI/UX Designer", "Alegrium", "Fulltime", true),
+            ListDataAdapter.ItemListAdapter.ItemData(R.drawable.defaultimage2, "Front End Developer", "Gojek", "Fulltime", true),
+            ListDataAdapter.ItemListAdapter.ItemData(R.drawable.defaultimage3, "Backend Engineer (Laravel)", "DOT Indonesia", "Fulltime", true),
+            ListDataAdapter.ItemListAdapter.ItemData(R.drawable.defaultimage4, "Data Scientist", "Ninja Van", "Fulltime", true),
+
+
+            )
+
+        recomRecycler = view.findViewById(R.id.recyclerRecomendation)
+        recomRecycler.addItemDecoration(ItemSpacingDecoration(8))
+        recomAdapter = ListDataAdapter.ItemListAdapter(requireContext(), dataList)
+        recomRecycler.layoutManager = LinearLayoutManager(requireContext())
+        recomRecycler.adapter = recomAdapter
+
+
         return view
 
 
+    }
+
+
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        imageadapter.stopAutoScroll()
     }
 
 
@@ -82,5 +119,18 @@ class HomeFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    class ItemSpacingDecoration(private val spacing: Int) : RecyclerView.ItemDecoration(){
+
+        override fun getItemOffsets(
+            outRect: Rect,
+            view: View,
+            parent: RecyclerView,
+            state: RecyclerView.State
+        ) {
+            super.getItemOffsets(outRect, view, parent, state)
+            outRect.bottom = spacing
+        }
     }
 }

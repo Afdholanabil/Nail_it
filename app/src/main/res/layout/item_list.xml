@@ -58,7 +58,7 @@
         android:id="@+id/imgSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bookmark_24"
+        android:src="@drawable/bookmark_outline"
         android:layout_margin="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

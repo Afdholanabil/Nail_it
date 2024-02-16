@@ -1,5 +1,6 @@
 package com.example.nail_it.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import com.example.nail_it.R
 import com.example.nail_it.RecomendationActivity
 
 class ListDataAdapter {
-    class ItemListAdapter(private val context: RecomendationActivity, private val list: List<ItemData>) :
+    class ItemListAdapter(private val context: Context, private val list: List<ItemData>) :
         RecyclerView.Adapter<ItemListAdapter.ViewHolder>() {
         data class ItemData(
             val imageId: Int,

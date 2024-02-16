@@ -7,40 +7,77 @@
     android:padding="20dp"
     tools:context=".HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpager_slider"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
-
-        </androidx.viewpager2.widget.ViewPager2>
-
-        <TextView
-            android:id="@+id/title_home1"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pekerjaan_cocok_denganmu"
-            android:textSize="22sp"
-            android:textColor="@color/gray700"
-            android:fontFamily="@font/satoshibold"
-            app:layout_constraintTop_toBottomOf="@id/viewpager_slider"/>
+            android:layout_height="wrap_content">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerRecomendation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@color/white"
-            android:nestedScrollingEnabled="false"
-            app:layout_constraintTop_toBottomOf="@id/title_home1">
-        </androidx.recyclerview.widget.RecyclerView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager_slider"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <TextView
+                android:id="@+id/title_home1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pekerjaan_cocok_denganmu"
+                android:textSize="22sp"
+                android:textColor="@color/gray700"
+                android:fontFamily="@font/satoshibold"
+                app:layout_constraintTop_toBottomOf="@id/viewpager_slider"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRecomendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                tools:itemCount="5"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintTop_toBottomOf="@id/title_home1">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_t1_pekerjaanCocok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/recyclerRecomendation">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tampilkan_semua_1"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_primary"
+                    android:fontFamily="@font/satoshimedium"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/ll_t1_pekerjaanCocok"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
 
 </FrameLayout>
